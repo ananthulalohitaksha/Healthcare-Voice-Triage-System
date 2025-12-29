@@ -1,56 +1,88 @@
-# ==================================================
-# OS / IDE
-# ==================================================
-# macOS system files
-.DS_Store
+# ===================================
+# Python
+# ===================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.log
+*.sqlite3
+*.egg-info/
+.env
+.venv
 *.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ===================================
+# Environment & Config
+# ===================================
+# Conda environments and virtual env folders
+venv/
+env/
+.voiceagents_env/
+.voiceagents_venv/
+.idea/
+.vscode/
+*.iml
+
+# Jupyter / Streamlit
+.ipynb_checkpoints/
+.streamlit/
+
+# Mac / System files
+.DS_Store
 .AppleDouble
 .LSOverride
 Icon?
 ._*
 
-# IDE / Editor settings
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-.project
-.pydevproject
-*.iml
+# ===================================
+# Logs and Runtime Data
+# ===================================
+*.log
+logs/
+orchestration_agent/demos/logs/
+caregiver_agent/logs/
+followup_agent/logs/
+medication_agent/logs/
+*.jsonl
 
-# ==================================================
-# Python
-# ==================================================
-# Byte-compiled / cache files
-__pycache__/
-**/__pycache__/
-*.py[cod]
-*$py.class
-*.pyo
-*.pyd
-*.pdb
-*.pkl
+# Temporary data or generated outputs
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
 
-# Virtual environments
-.venv/
-venv/
-env/
-.voiceagents_env/
-.voiceagents_venv/
+# ===================================
+# Generated Datasets / Example Data
+# ===================================
+appointment_agent/qna_examples/generated_qna_examples.csv
+appointment_agent/qna_examples/generated_qna_examples.json
 
-# Packaging / build artifacts
+# ===================================
+# Python Packaging / Distribution
+# ===================================
 build/
 dist/
-.eggs/
 *.egg
 *.egg-info/
+.eggs/
 MANIFEST
 __pypackages__/
 
-# Shared object / compiled extensions
-*.so
-
-# Type checker / testing cache
+# ===================================
+# Reports / Caches / Compiled Files
+# ===================================
 .mypy_cache/
 pytest_cache/
 .cache/
@@ -59,56 +91,31 @@ pytest_cache/
 htmlcov/
 *.spec
 
-# ==================================================
-# Jupyter / Streamlit
-# ==================================================
-.ipynb_checkpoints/
-.streamlit/
-.streamlit/secrets.toml
+# ===================================
+# OS or IDE Metadata
+# ===================================
+.vscode/
+.idea/
+.project
+.pydevproject
+*.sublime-project
+*.sublime-workspace
 
-# ==================================================
-# 🧾 Logs and Runtime Outputs
-# ==================================================
-# General logs
-*.log
-
-# LangGraph agent logs
-logs/*.jsonl
-logs/*.txt
-logs/*.log
-!logs/.gitkeep
-
-# ==================================================
-# Data / Temporary Files
-# ==================================================
-tmp/
-temp/
-*.tmp
-*.bak
-*.swp
-
-# Auto-generated data examples
-data/generated_qna_examples.csv
-data/generated_qna_examples.json
-
-# ==================================================
-# Credentials / Keys / Tokens
-# ==================================================
-# Note: .env is NOT ignored - each user should manage their own .env file
-# .env.example is tracked as a template
-.env
-.env.local
-.env.*.backup
+# ===================================
+# User Keys / Sensitive Files
+# ===================================
 *.pem
 *.key
 *.crt
 *.token
+*.json (if containing secrets)
 OPENAI_API_KEY.txt
+.env.local
+.env.*.backup
 
-# ==================================================
-# Evaluation Results
-# ==================================================
-# Keep evaluation structure but ignore temporary files
-evaluation/results/*.html
-evaluation/results/*.png
-evaluation/results/*.pdf
+# ===================================
+# Streamlit & Local Deployment Files
+# ===================================
+.streamlit/secrets.toml
+prototype_demo/__pycache__/
+prototype_demo/.ipynb_checkpoints/
