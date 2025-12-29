@@ -4,6 +4,17 @@ A comprehensive multi-agent healthcare voice system for patient appointment mana
 
 ## Overview
 
+## The Problem: Post-Discharge Care Gaps
+
+Hospital readmissions within 30 days of discharge remain a critical healthcare challenge, often driven by inadequate monitoring, medication non-adherence, or delayed recognition of complications. Traditional post-discharge care suffers from:
+
+* **Scalability Limitations**: Relying on manual, scheduled phone calls from nursing staff leads to inconsistent application and delayed interventions.
+* **Accessibility Barriers**: Navigating complex phone systems or waiting hours for nurse callbacks creates life-threatening delays when patients experience acute symptoms.
+* **Medication Safety Risks**: Preventable readmissions are frequently caused by patient confusion regarding side effects, drug interactions, or dosing.
+* **Caregiver Burden**: Family members often lack the structured data needed to monitor a loved one's health trajectory and identify concerning trends early.
+
+**VoiceAgents** bridges this gap by providing a 24/7 conversational interface that combines natural language understanding with clinical decision support to deliver guideline-compliant care at scale.
+
 VoiceAgents is an AI-powered healthcare assistant that provides:
 - **Appointment Management** - Schedule, reschedule, cancel, and check appointments
 - **Symptom Triage** - RED/ORANGE/GREEN classification for emergency detection
