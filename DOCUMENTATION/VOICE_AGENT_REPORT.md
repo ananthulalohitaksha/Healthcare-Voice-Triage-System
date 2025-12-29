@@ -300,4 +300,4 @@ The technical implementation of these integrations would leverage API-based comm
 
 ---
 
-**This document is under active development as part of the CMU x Zyter Capstone Project.**
+**This document is part of the CMU x Zyter Capstone Project.**
