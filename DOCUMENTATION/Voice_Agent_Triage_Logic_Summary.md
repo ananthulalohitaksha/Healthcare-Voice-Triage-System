@@ -302,6 +302,4 @@
 
 ---
 
-**Document Version:** 1.0
-**Last Updated:** November 11, 2025
-**Contact:** Christine Ma (xm3@andrew.cmu.edu)
+
